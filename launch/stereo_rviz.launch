@@ -1,0 +1,4 @@
+<launch>
+   <!-- Visualisation RVIZ --> 
+   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find rtabmap_ros)/launch/config/turtlebot_navigation.rviz"/>
+</launch>
