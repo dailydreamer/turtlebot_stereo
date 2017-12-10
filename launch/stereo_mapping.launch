@@ -21,6 +21,7 @@
       <param name="frame_id" type="string" value="base_footprint"/>
 			<param name="map_frame_id" type="string" value="map"/>
 			<param name="wait_for_transform" type="bool" value="true"/>
+
   	</node>
               
    <group ns="rtabmap">   
@@ -55,6 +56,10 @@
          <param name="Vis/EstimationType"                type="string" value="0"/>   <!-- 0=3D->3D, 1=3D->2D (PnP) -->
          <param name="RGBD/LoopClosureReextractFeatures" type="string" value="true"/>
          <param name="Vis/MaxDepth"                      type="string" value="10"/>
+
+         <!-- parameter -->
+         <param name="grid_cell_size"                    type="double" value="0.025"/>
+         <param name="proj_min_cluster_size"             type="int" value="100"/>
       </node>   
    </group>
   
